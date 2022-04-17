@@ -588,6 +588,7 @@ export default class ImageDetail extends React.Component<Props> {
       origin,
       source,
       resizeMode,
+      modalImageResizeMode,
       backgroundColor = '#000000',
       hideCloseButton,
       imageStyle,
@@ -692,7 +693,7 @@ export default class ImageDetail extends React.Component<Props> {
           style={animateConf}
           renderToHardwareTextureAndroid={renderToHardwareTextureAndroid === false ? false : true}>
           <FastImage
-            resizeMode={resizeMode}
+            resizeMode={modalImageResizeMode}
             style={[
               imageStyle,
               {
